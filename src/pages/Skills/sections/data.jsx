@@ -19,7 +19,6 @@ export const Languages_Tools = [
       "logo/tailwindcss.svg",
       "logo/bootstrap.svg",
       "logo/framer-motion.svg",
-      "logo/styled-components.svg",
       "logo/formik.svg",
       "logo/swiper.svg",
     ],
