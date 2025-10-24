@@ -12,7 +12,7 @@ export default function Skills() {
           <div className="space-y-4">
             <div>
               <SectionHeader>
-                <p className="!text-sm">what i do</p>
+                <p className="!text-sm">what i use</p>
                 My Skills
               </SectionHeader>
             </div>

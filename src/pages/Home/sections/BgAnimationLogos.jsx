@@ -5,8 +5,12 @@ import MovableLogo from "../../../components/MovableLogo";
 import { logos } from "../data";
 import { useMediaQuery } from "@chakra-ui/react";
 
-const spring = { stiffness: 150, damping: 25, mass: 0.1 };
-
+const spring = {
+  stiffness: 80,
+  damping: 20,
+  mass: 0.8,
+  restDelta: 0.001,
+};
 export default function BgAnimationLogos() {
   const ref = useRef(null);
   const wrapperStyle = { x: useSpring(0, spring), y: useSpring(0, spring) };
@@ -16,11 +20,15 @@ export default function BgAnimationLogos() {
   const mouse_move = (e) => {
     const { width, top, height, left } = ref.current.getBoundingClientRect();
 
-    const moveX = (e.clientX - window.innerWidth + (left + width) / 2) / 69;
-    const moveY = (e.clientY - window.innerHeight + (top + height) / 2) / 69;
+    const moveX = (e.clientX - window.innerWidth + (left + width) / 2) / 45; // Increased movement range
+    const moveY = (e.clientY - window.innerHeight + (top + height) / 2) / 45;
 
-    wrapperStyle.x.set(moveX);
-    wrapperStyle.y.set(moveY);
+    // Add subtle randomness for more organic movement
+    const randomX = (Math.random() - 0.5) * 0.5;
+    const randomY = (Math.random() - 0.5) * 0.5;
+
+    wrapperStyle.x.set(moveX + randomX);
+    wrapperStyle.y.set(moveY + randomY);
   };
   // ------------------
 

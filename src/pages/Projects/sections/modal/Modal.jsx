@@ -18,7 +18,7 @@ export default function Modal(props) {
   return (
     <AlertDialog isCentered onClose={onClose} isOpen={isOpen}>
       <AlertDialogOverlay bg="blackAlpha.800">
-        <AlertDialogContent maxW={900} className="!bg-transparent">
+        <AlertDialogContent maxW={"80%"} className="!bg-transparent">
           {/* header */}
           <ModalHeader {...{ onClose, modal }}></ModalHeader>
           {/* body */}
@@ -71,7 +71,7 @@ const ModalFooter = ({ modal }) => {
   return (
     <AlertDialogFooter className="!justify-start gap-y-2 flex-col max-sm:!p-4">
       <>
-        <ul className="list-disc mx-4 [&>li::marker]:text-[#0aff9d] max-sm:text-sm text-lg space-y-2">
+        <ul className="list-disc mx-4 [&>li::marker]:text-[#0aff9d] max-sm:text-sm text-lg space-y-2 max-sm:hidden">
           {modal.description.map((point, i) => (
             <li className="text-gray-300 [text-wrap:pretty]" key={"point" + i}>
               {point}

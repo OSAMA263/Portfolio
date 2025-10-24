@@ -4,7 +4,7 @@ import tw from "tailwind-styled-components";
 
 export default function PageWrapper({ children, id }) {
   const page = useRef(null);
-  const isInView = useInView(page, { once: true });
+  const isInView = useInView(page, { once: true, margin: "-100px" });
 
   const projectsRef = useRef(null);
   const { scrollYProgress} = useScroll({

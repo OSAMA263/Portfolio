@@ -56,8 +56,7 @@ export default function FormWrapper() {
   );
 }
 const Form = tw.form`
-2xl:w-[75%]
-sm:w-[80%]
+sm:w-[85%]
 w-[90%] 
 mx-auto 
 sm:space-y-6

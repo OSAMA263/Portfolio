@@ -27,18 +27,18 @@ export default function Contact() {
         <a href="https://github.com/OSAMA263" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>
-        <a
+        {/* <a
           href="https://www.facebook.com/osama.elseify.58"
           target="_blank"
           rel="noreferrer"
         >
           <FaFacebook />
-        </a>
+        </a> */}
       </Socials>
       <a
         className="mt-6 h-fit"
-        href={"Osama-Khaled_Front-End-Developer_CV.pdf"}
-        download="Osama-Khaled_Front-End-Developer_CV.pdf"
+        href={"Osama_FrontEnd-Developer_CV.pdf"}
+        download="Osama_FrontEnd-Developer_CV.pdf"
         target="_blank"
         rel="noreferrer"
       >
@@ -83,6 +83,7 @@ hover:text-black
 hover:border-transparent
 flex
 sm:p-2
+sm:text-lg
 p-1
 rounded-md
 justify-center

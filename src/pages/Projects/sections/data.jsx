@@ -1,5 +1,44 @@
 export const ProjectsInfo = [
   [
+    // education
+    {
+      completed: true,
+      thumbnail: {
+        pc: "projects/pc/thumbnail/edu.webp",
+        mobile: "projects/mobile/thumbnail/edu.webp",
+      },
+      modal: {
+        name: "Education",
+        languages: [
+          "ReactJS",
+          "Chakra-UI",
+          "Tailwind",
+          "Framer motion",
+          "React Query",
+        ],
+        description: [
+          "responsive web app with role-based access for students and admins.",
+          "Developed secure authentication with custom login and signup for both user types.",
+          "Worked closely with a backend developer to define and optimize API endpoints for seamless integration.",
+        ],
+        live: "https://osama263.github.io/education/",
+        github: "https://github.com/OSAMA263/education",
+      },
+      sliderImages: {
+        pc: [
+          "projects/pc/slider/edu/pic0.webp",
+          "projects/pc/slider/edu/pic1.webp",
+          "projects/pc/slider/edu/pic2.webp",
+          "projects/pc/slider/edu/pic3.webp",
+        ],
+        mobile: [
+          "projects/mobile/slider/edu/pic0.webp",
+          "projects/mobile/slider/edu/pic1.webp",
+          "projects/mobile/slider/edu/pic2.webp",
+          "projects/mobile/slider/edu/pic3.webp",
+        ],
+      },
+    },
     // e-store
     {
       completed: true,
@@ -38,40 +77,6 @@ export const ProjectsInfo = [
           "projects/mobile/slider/E-store/pic1.webp",
           "projects/mobile/slider/E-store/pic2.webp",
           "projects/mobile/slider/E-store/pic3.webp",
-        ],
-      },
-    },
-    // cafe
-    {
-      completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/cafe.webp",
-        mobile: "projects/mobile/thumbnail/cafe.webp",
-      },
-      modal: {
-        name: "cafe",
-        languages: ["ReactJS", "Tailwind Css", "Framer-Motion", "APi"],
-        description: [
-          "Displays lunch, dinner, and tea menus fetched live from a JSON server API.",
-          "Allows you to add, edit and delete menu items from the front end.",
-          "Hosted api the on Vercel to keep the backend API active and responsive.",
-          "Built with responsive design and smooth interactions for easy navigation and management.",
-        ],
-        live: "https://osama263.github.io/cafe/",
-        github: "https://github.com/OSAMA263/cafe",
-      },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/cafe/pic0.webp",
-          "projects/pc/slider/cafe/pic1.webp",
-          "projects/pc/slider/cafe/pic2.webp",
-          "projects/pc/slider/cafe/pic3.webp",
-        ],
-        mobile: [
-          "projects/mobile/slider/cafe/pic0.webp",
-          "projects/mobile/slider/cafe/pic1.webp",
-          "projects/mobile/slider/cafe/pic2.webp",
-          "projects/mobile/slider/cafe/pic3.webp",
         ],
       },
     },
@@ -185,46 +190,6 @@ export const ProjectsInfo = [
         ],
       },
     },
-    // constructs
-    {
-      completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/constructs.webp",
-        mobile: "projects/mobile/thumbnail/constructs.webp",
-      },
-      modal: {
-        name: "constructs",
-        languages: [
-          "ReactJS",
-          "Chakra-UI",
-          "Framer-Motion",
-          "Tailwind",
-          "Sass",
-        ],
-        description: [
-          "Developed a simple website featuring smooth animations during page navigation and responsiveness for optimal viewing across devices.",
-        ],
-        live: "https://osama263.github.io/constructs/",
-        github: "https://github.com/OSAMA263/constructs",
-      },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/constructs/pic0.webp",
-          "projects/pc/slider/constructs/pic1.webp",
-          "projects/pc/slider/constructs/pic2.webp",
-          "projects/pc/slider/constructs/pic3.webp",
-        ],
-        mobile: [
-          "projects/mobile/slider/constructs/pic0.webp",
-          "projects/mobile/slider/constructs/pic1.webp",
-          "projects/mobile/slider/constructs/pic2.webp",
-          "projects/mobile/slider/constructs/pic3.webp",
-        ],
-      },
-    },
-  ],
-  // slides 3
-  [
     // sushi
     {
       completed: true,
@@ -253,6 +218,43 @@ export const ProjectsInfo = [
           "projects/mobile/slider/sushi/pic1.webp",
           "projects/mobile/slider/sushi/pic2.webp",
           "projects/mobile/slider/sushi/pic3.webp",
+        ],
+      },
+    },
+  ],
+  // slides 3
+  [
+    // cafe
+    {
+      completed: true,
+      thumbnail: {
+        pc: "projects/pc/thumbnail/cafe.webp",
+        mobile: "projects/mobile/thumbnail/cafe.webp",
+      },
+      modal: {
+        name: "cafe",
+        languages: ["ReactJS", "Tailwind Css", "Framer-Motion", "APi"],
+        description: [
+          "Displays lunch, dinner, and tea menus fetched live from a JSON server API.",
+          "Allows you to add, edit and delete menu items from the front end.",
+          "Hosted api the on Vercel to keep the backend API active and responsive.",
+          "Built with responsive design and smooth interactions for easy navigation and management.",
+        ],
+        live: "https://osama263.github.io/cafe/",
+        github: "https://github.com/OSAMA263/cafe",
+      },
+      sliderImages: {
+        pc: [
+          "projects/pc/slider/cafe/pic0.webp",
+          "projects/pc/slider/cafe/pic1.webp",
+          "projects/pc/slider/cafe/pic2.webp",
+          "projects/pc/slider/cafe/pic3.webp",
+        ],
+        mobile: [
+          "projects/mobile/slider/cafe/pic0.webp",
+          "projects/mobile/slider/cafe/pic1.webp",
+          "projects/mobile/slider/cafe/pic2.webp",
+          "projects/mobile/slider/cafe/pic3.webp",
         ],
       },
     },
@@ -294,6 +296,46 @@ export const ProjectsInfo = [
         ],
       },
     },
+    // constructs
+    {
+      completed: true,
+      thumbnail: {
+        pc: "projects/pc/thumbnail/constructs.webp",
+        mobile: "projects/mobile/thumbnail/constructs.webp",
+      },
+      modal: {
+        name: "constructs",
+        languages: [
+          "ReactJS",
+          "Chakra-UI",
+          "Framer-Motion",
+          "Tailwind",
+          "Sass",
+        ],
+        description: [
+          "Developed a simple website featuring smooth animations during page navigation and responsiveness for optimal viewing across devices.",
+        ],
+        live: "https://osama263.github.io/constructs/",
+        github: "https://github.com/OSAMA263/constructs",
+      },
+      sliderImages: {
+        pc: [
+          "projects/pc/slider/constructs/pic0.webp",
+          "projects/pc/slider/constructs/pic1.webp",
+          "projects/pc/slider/constructs/pic2.webp",
+          "projects/pc/slider/constructs/pic3.webp",
+        ],
+        mobile: [
+          "projects/mobile/slider/constructs/pic0.webp",
+          "projects/mobile/slider/constructs/pic1.webp",
+          "projects/mobile/slider/constructs/pic2.webp",
+          "projects/mobile/slider/constructs/pic3.webp",
+        ],
+      },
+    },
+  ],
+  // slide 4
+  [
     {
       completed: false,
       thumbnail: {
@@ -374,31 +416,3 @@ export const ProjectsInfo = [
   },
 ];
 */
-
-// {
-//   title: "Education",n
-//   bullets: [
-//     "Collaborated on a responsive web app with role-based access for students and admins.",
-//     "Developed secure authentication with custom login and signup for both user types.",
-//     "Worked closely with a backend developer to define and optimize API endpoints for seamless integration.",
-//   ],
-//   live: "https://web-master-intern-workshop-2-e-lear.vercel.app/",
-//   github:
-//     "https://github.com/OSAMA263/web-master-intern-workshop-2-e-learning-platform",
-//   desktop: {
-//     sliderImgs: [
-//       "projects/mobile/slider/edu/pic0.webp",
-//       "projects/mobile/slider/edu/pic0.webp",
-//       "projects/mobile/slider/edu/pic0.webp",
-//     ],
-//     thumbnail: "projects/mobile/slider/edu/pic0.webp",
-//   },
-//   mobile: {
-//     sliderImgs: [
-//       "projects/mobile/slider/edu/pic0.webp",
-//       "projects/mobile/slider/edu/pic0.webp",
-//       "projects/mobile/slider/edu/pic0.webp",
-//     ],
-//     thumbnail: "projects/mobile/slider/edu/pic0.webp",
-//   },
-// },

@@ -62,7 +62,7 @@ const info = {
   vite: "Working with Vite and utilizing its ability to create React websites and quickly deploy them on platforms, I have greatly improved my experience.",
   chakraUi:
     "I'm good at using Chakra UI, a component library for React, to create accessible and customizable user interfaces.",
-  redux: "I am good at using Redux and ReduxTollkit as a global data store.",
+  redux: "I am good at using Redux and ReduxToolkit as a global data store.",
   framerMotion:
     "I'm quite skilled at using frame motion. I can create excellent page animation and styling. I usually use this library along with Tailwind.",
   styledComponents:
@@ -73,4 +73,6 @@ const info = {
     "I am well-versed in Swiper, a popular library for creating creating responsive and touch-enabled sliders and carousels.",
   typescript:
     "I think it's a powerful language if you're working with a team on a project. It prevents a lot of mistakes from happening. Otherwise,Overrated af i could spend more time writing types than I would fixing bugs if I used JS.",
+  reactQuery:
+    "I really like using React Query for managing server state in React. It handles data fetching, caching, and background updates automatically, so I don’t have to write tons of boilerplate code. It makes working with APIs a lot smoother and less stressful.",
 };

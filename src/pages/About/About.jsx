@@ -38,7 +38,7 @@ const TextPoints = () => {
   let letter_i = 0;
 
   return (
-    <ul className="flex flex-col sm:gap-y-4 gap-y-3 h-full">
+    <ul className="flex flex-col sm:gap-y-4 gap-y-3 my-auto">
       {text.map((line, line_i) => (
         <li
           className="w-fit flex 2xl:leading-relaxed xl:leading-normal lg:leading-tight"
@@ -98,7 +98,8 @@ flex
 flex-col
 lg:tracking-wide
 max-[380px]:space-y-2
-justify-start
+justify-between
+h-full
 `;
 
 const ImgWrapper = tw(motion.div)`
@@ -108,21 +109,19 @@ max-h-fit
 max-[640px]:hidden
 `;
 
-const text = [
-  "Hi -I’m -Osama, -a -front–end -developer -with -a -passion -for -creating -clean, -responsive, -user–friendly -sites.",
-
-  "I -also -did -a -6–month -internship -where -I -worked -with -a -team, -so -I'm -comfortable -in -both -solo -and -team -environments.",
-
-  "I -work -best -on -solo -projects -because -I -can -stay -organized -and -know -where -everything -is. -There -are -no -conflicts -or -unexpected -changes, -and -I -understand -all -the -code. -This -helps -me -finish -faster -and -keep -everything -easy -to -manage.",
-
-  "I'm -always -learning -and -improving -my -UI/UX -skills. -Whether -it's -a -personal -project -or -teamwork, -I -enjoy -turning -ideas -into -functional, -beautiful -websites.",
-];
-
 // const text = [
-//   "Hello -again!",
-//   "Graduated -from -Delta -Academy -of -Science -with -a -bachelor's -degree -in -Management -information -systems.",
-//   "As -a -FrontEnd -developer, -I -use -React -alongside -with -important -libraries -like -Tailwind -for -styling -and -ChakraUI -for -superior -user -interface -elements.",
-//   "I -mostly -concentrate -on -useing -Framer -Motion -primarily -to -create -charming -visuals -for -my -web -development -projects.",
-//   "I -am -constantly -learning -new -languages -and -tools -and -not -just -relying -on -the -knowledge -i -already -have.",
-//   // "I -am -looking -for -a -job -where -I -can -apply -my -knowledge -and -provide -cool -ass -websites -and -gain -guidance -from -experienced -colleagues.",
+//   "Hi -I’m -Osama, -a -front–end -developer -with -a -passion -for -creating -clean, -responsive, -user–friendly -sites.",
+
+//   "I -also -did -a -6–month -internship -where -I -worked -with -a -team, -so -I'm -comfortable -in -both -solo -and -team -environments.",
+
+//   "I -work -best -on -solo -projects -because -I -can -stay -organized -and -know -where -everything -is. -There -are -no -conflicts -or -unexpected -changes, -and -I -understand -all -the -code. -This -helps -me -finish -faster -and -keep -everything -easy -to -manage.",
+
+//   "I'm -always -learning -and -improving -my -UI/UX -skills. -Whether -it's -a -personal -project -or -teamwork, -I -enjoy -turning -ideas -into -functional, -beautiful -websites.",
 // ];
+
+const text = [
+  "Hey -I'm -Osama, -a -frontEnd -developer -who -loves -building -clean, -responsive, -and -interactive -websites.",
+  "I -completed -a -6- month -internship -where -I -collaborated -with -a -team -to -build -responsive, -modern -web -interfaces, -worked -closley -with -backend -developer -to -get -the -best -endpoints",
+  "I -focus -on -creating -smooth -user -experiences -using -React, -Tailwind, -and -modern -UI -libraries.",
+  "I'm -constantly -learning -and -refining -my -skills -to -turn -ideas -into -functional -designs.",
+];

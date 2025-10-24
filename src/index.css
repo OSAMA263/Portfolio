@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100dvw;
-  font-family: "Courier", monospace;
+  font-family: monospace;
   -webkit-font-smoothing: none;
   background-color: #111111;
   user-select: none;
@@ -238,4 +238,20 @@ input.invalid-input:focus {
 }
 .invalid-input {
   border: 1px #bb2222a4 solid;
+}
+
+/* slow glow for pulsing/wrapping layer */
+@keyframes whoami-glow-slow {
+  0%, 100% {
+    opacity: 0.06; 
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.03);
+  }
+}
+
+.glow-slow {
+  animation: whoami-glow-slow 4s ease-in-out infinite;
 }

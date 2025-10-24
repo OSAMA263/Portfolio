@@ -51,9 +51,9 @@ const Page = ({ easterEgg, setEasterEgg }) => {
         </button>
         <div className="space-y-6">
           <div className="space-y-2">
-            <span className="font-bold underline text-xl">What i like:</span>
+            <span className="font-bold underline text-xl">i like:</span>
             <p>
-              Sooooo, the actual stuff that I enjoy is music, videogames, anime,
+              the actual stuff that I enjoy is music, videogames, sleep,
               and I used to draw like a maniac.
             </p>
           </div>

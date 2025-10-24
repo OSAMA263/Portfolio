@@ -27,20 +27,30 @@ function LgNavbar() {
 
   return (
     <Nav>
-      <ul>
+      <ul className="font-[Courier]">
         {navLinks.map(({ link, label }, i) => (
           <Li {...linksAnimation} custom={i} key={i}>
             <Link
               aria-label="Square-link"
               className="p-[2px]"
               href={link}
-              spy
+              spy={true}
               to={link}
+              offset={-100}
+              duration={500}
+              spyThrottle={100}
             >
               <Square />
             </Link>
             <H1>
-              <Link href={link} spy to={link}>
+              <Link
+                href={link}
+                spy={true}
+                to={link}
+                offset={-100}
+                duration={500}
+                spyThrottle={100}
+              >
                 {label}
               </Link>
             </H1>

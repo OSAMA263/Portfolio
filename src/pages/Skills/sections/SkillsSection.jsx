@@ -43,9 +43,9 @@ const LeftSection = (props) => {
         custom={i}
         className="flex flex-wrap w-full py-2 overflow-hidden tracking-widest"
       >
-        <span className="inline-block text-lg font-semibold max-[350px]:text-sm">
+        <p className="inline-block text-lg  max-[350px]:text-sm">
           {p}
-        </span>
+        </p>
       </motion.div>
       {/* loggo */}
       <LogosRow variants={Logo_wrapper_variants} custom={i}>
