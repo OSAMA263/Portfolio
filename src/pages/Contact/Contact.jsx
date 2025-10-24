@@ -3,7 +3,8 @@ import ContentWrapper from "../../shared/ContentWrapper";
 import PageWrapper from "../../shared/PageWrapper";
 import SectionHeader from "../../shared/SectionHeader";
 import FormWrapper from "./sections/FormWrapper";
-import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { AiOutlineDownload } from "react-icons/ai";
 
@@ -27,13 +28,13 @@ export default function Contact() {
         <a href="https://github.com/OSAMA263" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>
-        {/* <a
-          href="https://www.facebook.com/osama.elseify.58"
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=osamaelseify2@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
-          <FaFacebook />
-        </a> */}
+          <IoMdMail />
+        </a>
       </Socials>
       <a
         className="mt-6 h-fit"
