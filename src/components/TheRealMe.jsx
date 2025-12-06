@@ -51,17 +51,15 @@ const Page = ({ easterEgg, setEasterEgg }) => {
         </button>
         <div className="space-y-6">
           <div className="space-y-2">
-            <span className="font-bold underline text-xl">i like:</span>
+            <span className="font-bold underline text-xl">what i like:</span>
             <p>
-              the actual stuff that I enjoy is music, videogames, sleep,
-              and I used to draw like a maniac.
+              the actual shit that I enjoy are music, videogames, sleep, and I
+              used to draw like a maniac.
             </p>
           </div>
           <div className="space-y-2">
-            <span className="font-bold underline text-xl">
-              What i dont like:
-            </span>
-            <p>Humans</p>
+            <span className="font-bold underline text-xl">What i hate:</span>
+            <p>ppl.</p>
           </div>
         </div>
         {/* lists */}
@@ -90,8 +88,8 @@ const Page = ({ easterEgg, setEasterEgg }) => {
         {/* gj lad */}
         <div>
           <h2>
-            GJ ON FINDING THE HIDDEN TREASURE THINGY, idk, <br /> heres my
-            secret{" "}
+            GJ ON FINDING THE HIDDEN TREASURE THINGY,or something idk, <br />{" "}
+            heres my super hidden secret{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -129,7 +127,7 @@ const theStuff = [
   {
     title: "Music",
     header:
-      "Most of the songs I listen to are from games, and they are all singles, so I'm just going to give you some of the artists I listen to.",
+      "Most of the music I listen to are from games i played, and they are all singles, so I'm just going to give you some of the artists I listen to.",
     list: [
       "Daughter",
       "My Chemical Romance",
@@ -151,41 +149,41 @@ const theStuff = [
   {
     title: "Games",
     header:
-      "I love 2D, Metrodvinia, and story-rich games, and I played a lot of games, but I'm just going to list the ones that got stuck in my head.",
+      "I like 2D, Metrodvinia, and story-rich games, I played a lot of games, but I'm just going to list the ones that got stuck in my head for a long time.",
     list: [
-      "Gris",
-      "Spiritfarer",
       "Outer Wilds",
       "What Remains of Edith Finch",
       "Disco Elysium",
-      "Fear & Hunger",
-      "Blasphemous",
-      "Before Your Eyes",
       "Fire Watch",
+      "Spiritfarer",
+      "Gris",
+      "Before Your Eyes",
+      "Blasphemous",
       "Soma",
       "Ghost Song",
       "Kentucky Route Zero",
+      "Fear & Hunger",
       "Coffee Talk",
     ],
   },
   {
     title: "Anime",
     header:
-      "dont you fucking judge me, we all got a thing that we love and other ppl dont like it",
+      "dont you fucking judge me bitch, we all got a thing that we love but embarrassed to share it with others, its like your kink, which this is not it but u get what im saying.",
     list: [
       "Clannad: After Story",
       "The Garden of Words",
-      "D-Frag",
-      "WataMote",
-      "Josee, the Tiger and the Fish",
       "Chainsaw Man",
+      "Josee, the Tiger and the Fish",
       "Violet Evergarden",
-      "Asobi Asobase",
+      "Odd taxi",
       "Orb",
-      "Barakamon",
-      "Wagnaria",
-      "To Your Eternity",
+      "WataMote",
       "A Silent Voice",
+      "Barakamon",
+      "D-Frag",
+      "To Your Eternity",
+      "Asobi Asobase",
     ],
   },
 ];

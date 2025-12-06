@@ -23,7 +23,7 @@ export default function FormInputs({ formik }) {
           name="name"
         />
         <FormHelperText>
-          <p className="text-[#b32323a4] max-sm:text-[10px]">
+          <p className="text-[#b32323a4] max-sm:text-[10px] max-sm:hidden">
             {errors.name && touched.name && errors.name}
           </p>
         </FormHelperText>
@@ -45,7 +45,7 @@ export default function FormInputs({ formik }) {
           name="email"
         />
         <FormHelperText>
-          <p className="text-[#b32323a4] max-sm:text-[10px]">
+          <p className="text-[#b32323a4] max-sm:text-[10px] max-sm:hidden">
             {errors.email && touched.email && errors.email}
           </p>
         </FormHelperText>
@@ -67,7 +67,7 @@ export default function FormInputs({ formik }) {
           rows="6"
         ></motion.textarea>
         <FormHelperText>
-          <p className="text-[#b32323a4] max-sm:text-[10px]">
+          <p className="text-[#b32323a4] max-sm:text-[10px] max-sm:hidden">
             {errors.message && touched.message && errors.message}
           </p>
         </FormHelperText>
