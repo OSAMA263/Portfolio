@@ -10,7 +10,7 @@ const H1Variants = {
   },
   whileInView: {
     x: 0,
-    transition: { x: { duration: 0.9, delay: 0.8 } },
+    transition: { x: { duration: 0.6, delay: 0.5 } },
   },
   viewport: { once: true },
 };
@@ -19,6 +19,6 @@ const H1 = tw(motion.h1)`
 text-3xl
 max-[480px]:text-lg
 mb-5
-font-[900]
-font-[Courier]
+font-[monospace]
+font-semibold
 `;

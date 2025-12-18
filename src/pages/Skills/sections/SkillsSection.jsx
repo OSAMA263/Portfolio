@@ -81,13 +81,13 @@ const Logo_wrapper_variants = {
   whileInView: (i) => ({
     opacity: 1,
     transition: {
-      duration: 0.4,
-      delay: 0.3 * i + (i + 1 * 1.6),
+      duration: 0.2,
+      delay:  (i + .8 * 1.6),
       when: "beforeChildren",
       staggerChildren: 0.1,
     },
   }),
-  viewport: { once: true },
+  // viewport: { once: true },
 };
 
 const LogosRow = tw(motion.div)`

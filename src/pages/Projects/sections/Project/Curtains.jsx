@@ -23,7 +23,7 @@ const CurtainColsAnimation = {
   initial: { y: "0%" },
   animate: (i) => ({
     y: "100%",
-    transition: { delay: i * 0.2 + 2.3, duration: 0.6 },
+    transition: { delay: i * 0.2 + 1.2, duration: 0.6 },
   }),
 };
 

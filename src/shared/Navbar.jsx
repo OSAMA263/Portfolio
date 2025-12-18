@@ -19,15 +19,15 @@ function LgNavbar() {
     animate: (i) => ({
       x: "0%",
       transition: {
-        delay: 0.3 * i + 2.2,
-        duration: 0.6,
+        delay: 0.2 * i + 1.2,
+        duration: 0.4,
       },
     }),
   };
 
   return (
     <Nav>
-      <ul className="font-[Courier]">
+      <ul >
         {navLinks.map(({ link, label }, i) => (
           <Li {...linksAnimation} custom={i} key={i}>
             <Link
@@ -85,6 +85,7 @@ transition-all
 -translate-x-[120%]
 duration-500
 opacity-0
+text-[1rem]
 ms-5
 `;
 
@@ -107,8 +108,8 @@ function SmNavbar() {
     animate: ({ isOpen, i }) => ({
       x: isOpen ? ["-200%", "0%"] : ["0%", "200%"],
       transition: {
-        delay: 0.1 * i + 0.2,
-        duration: 0.7,
+        delay: 0.11 * i + 0.2,
+        duration: 0.4,
       },
     }),
   };
@@ -124,7 +125,7 @@ function SmNavbar() {
   }, [isOpen]);
 
   const slideStyle = `!z-[696] ${
-    !isOpen ? "delay-[.9s]" : ""
+    !isOpen ? "delay-[.4s]" : ""
   } !duration-200 !ease-linear bg-[#171717]`;
 
   return (

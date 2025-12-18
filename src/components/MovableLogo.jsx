@@ -55,7 +55,7 @@ const logoAnimation = {
   initial: {
     opacity: 0,
   },
-  animate: (i) => ({ opacity: 1, transition: { delay: 0.029 * i + 1.6 } }),
+  animate: (i) => ({ opacity: 1, transition: { delay: 0.029 * i + .6 } }),
 };
 
 const LogoWrapper = tw(motion.div)`

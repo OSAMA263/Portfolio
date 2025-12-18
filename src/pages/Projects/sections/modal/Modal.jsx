@@ -71,7 +71,7 @@ const ModalFooter = ({ modal }) => {
   return (
     <AlertDialogFooter className="!justify-start gap-y-2 flex-col max-sm:!p-4">
       <>
-        <ul className="list-disc mx-4 [&>li::marker]:text-[#0aff9d] max-sm:text-sm text-lg space-y-2 max-sm:hidden">
+        <ul className="list-disc mx-4 [&>li::marker]:text-[#0aff9d] max-sm:text-sm text-lg max-sm:hidden">
           {modal.description.map((point, i) => (
             <li className="text-gray-300 [text-wrap:pretty]" key={"point" + i}>
               {point}
@@ -92,7 +92,6 @@ const Lang = tw.span`
 rounded-md
 bg-[#131214]
 text-white
-font-bold
 p-1
 `;
 

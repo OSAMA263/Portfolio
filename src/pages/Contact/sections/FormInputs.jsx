@@ -90,8 +90,8 @@ const formAnimation = {
     x: "0%",
     opacity: 1,
     transition: {
-      delay: 0.1 * i + 1.9,
-      duration: 1.3,
+      delay: 0.1 * i + 1,
+      duration: .8,
       ease: "easeInOut",
     },
   }),

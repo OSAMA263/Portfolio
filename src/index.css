@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100dvw;
-  font-family: monospace;
+  font-family: system-ui, sans-serif;
   -webkit-font-smoothing: none;
   background-color: #111111;
   user-select: none;
@@ -52,7 +52,6 @@ textarea {
 }
 .scroll-snap {
   scroll-snap-align: start;
-  scroll-snap-stop: always;
   height: 100dvh;
 }
 .who-wrapper:has(h1 > span:is(:hover)) h1 {
@@ -242,8 +241,9 @@ input.invalid-input:focus {
 
 /* slow glow for pulsing/wrapping layer */
 @keyframes whoami-glow-slow {
-  0%, 100% {
-    opacity: 0.06; 
+  0%,
+  100% {
+    opacity: 0.06;
     transform: scale(0.98);
   }
   50% {

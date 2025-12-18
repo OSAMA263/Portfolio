@@ -46,9 +46,9 @@ const TextPoints = () => {
         >
           <TextAnimation
             opaDelay={0.01}
-            opaSpeed={0.06}
+            opaSpeed={0.03}
             letter_i={letter_i++}
-            opaWaitTime={1.6}
+            opaWaitTime={1}
           >
             -{"\u00A0"}
           </TextAnimation>
@@ -63,8 +63,8 @@ const TextPoints = () => {
                     // letter
                     <TextAnimation
                       opaDelay={0.01}
-                      opaSpeed={0.06}
-                      opaWaitTime={1.6}
+                      opaSpeed={0.03}
+                      opaWaitTime={1}
                       letter_i={letter_i++}
                       key={i}
                     >
@@ -120,8 +120,8 @@ max-[640px]:hidden
 // ];
 
 const text = [
-  "Hey -I'm -Osama, -a -frontEnd -developer -who -loves -building -clean, -responsive, -and -interactive -websites.",
-  "I -completed -a -6- month -internship -where -I -collaborated -with -a -team -to -build -responsive, -modern -web -interfaces, -worked -closley -with -backend -developer -to -get -the -best -endpoints",
-  "I -focus -on -creating -smooth -user -experiences -using -React, -Tailwind, -and -modern -UI -libraries.",
+  " Hey, -i -enjoy -building -clean -responsive -with -good -aniamtions -websites, -dahsboards -with -online -updateable -data -useing -APIS.",
+  " I -completed -a -6- month -internship -where -I -collaborated -with -a -team -to -build -responsive, -modern -web -interfaces, -worked -closley -with -backend -developer -to -get -the -best -endpoints",
+  "I -focus -on -creating -smooth -user -experiences -using -React, -Tailwind, -framer Motion -and -modern -UI -libraries.",
   "I'm -constantly -learning -and -refining -my -skills -to -turn -ideas -into -functional -designs.",
 ];

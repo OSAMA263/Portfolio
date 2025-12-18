@@ -6,7 +6,7 @@ import ProjectsContainer from "./sections/ProjectsContainer";
 export default function Projects() {
   return (
     <PageWrapper id="projects">
-      <ContentWrapper>
+      <ContentWrapper id="projects">
         <SectionHeader>
           <p className="text-sm">what i have done so far</p>My Projects
         </SectionHeader>

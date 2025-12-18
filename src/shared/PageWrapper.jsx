@@ -7,10 +7,11 @@ export default function PageWrapper({ children, id }) {
   const isInView = useInView(page, { once: true, margin: "-100px" });
 
   const projectsRef = useRef(null);
-  const { scrollYProgress} = useScroll({
-    target: projectsRef,
+  const { scrollYProgress } = useScroll({
+    // only provide the target when this wrapper is for the projects page
+    target: id === "projects" ? projectsRef : undefined,
     offset: ["0 0", "1 1"],
-    layoutEffect: false
+    layoutEffect: false,
   });
 
   return (
@@ -18,9 +19,12 @@ export default function PageWrapper({ children, id }) {
       <RevealPage ref={page} {...motionVariants} $id={id}>
         {isInView &&
           React.Children.map(children, (child) =>
-            React.cloneElement(child, {
-              scrollProgress: id === "projects" ? scrollYProgress:undefined,
-            })
+            React.cloneElement(
+              child,
+              id === "projects" && {
+                scrollProgress: scrollYProgress,
+              }
+            )
           )}
       </RevealPage>
     </Section>

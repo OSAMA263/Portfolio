@@ -78,7 +78,6 @@ const HeartBeat = {
 const Button = tw(motion.button)`
 border-[2px]
 border-[#858994]
-font-semibold
 hover:bg-[#0aff9d]
 hover:text-black
 hover:border-transparent
