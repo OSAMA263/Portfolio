@@ -1,16 +1,25 @@
 import { createStandaloneToast } from "@chakra-ui/react";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { Context } from "../context/ContextProvider";
 import tw from "tailwind-styled-components";
-import music from "/8bit-music.mp3";
-
-const sound = new Audio(music);
 
 export const TheRealMe = () => {
   const { toast } = createStandaloneToast();
   const { easterEgg, setEasterEgg } = useContext(Context);
 
+  const audioRef = useRef(null);
+
   useEffect(() => {
+    const loadAndPlay = async () => {
+      if (!audioRef.current) {
+        // lazy load ONLY when needed
+        const music = await import("/8bit-music.mp3");
+        audioRef.current = new Audio(music.default);
+        audioRef.current.loop = true;
+      }
+      audioRef.current.play();
+    };
+
     if (easterEgg) {
       toast({
         duration: 3000,
@@ -21,24 +30,32 @@ export const TheRealMe = () => {
           </div>
         ),
       });
-      sound.play();
+
+      loadAndPlay();
       document.body.style.overflow = "hidden";
     } else {
-      sound.pause();
-      sound.currentTime = 0;
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
       document.body.style.overflow = "auto";
     }
   }, [easterEgg]);
 
-  return <Page {...{ easterEgg, setEasterEgg }} />;
+  return <Page {...{ easterEgg, setEasterEgg, audioRef }} />;
 };
+
 // make the easter eagg show once
-const Page = ({ easterEgg, setEasterEgg }) => {
+const Page = ({ easterEgg, setEasterEgg, audioRef }) => {
   const [sure, setSure] = useState("leave?");
+
   const handleClick = () => {
     setSure("sure?");
     if (sure === "sure?") {
-      sound.currentTime = 0;
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
       setEasterEgg(false);
     }
   };
