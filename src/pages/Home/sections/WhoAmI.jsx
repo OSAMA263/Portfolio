@@ -21,11 +21,17 @@ export default function WhoAmI() {
         </>
       )}
 
-      <div className="space-y-2">
-        <Line className="text-4xl font-bold xl:text-6xl md:text-4xl">Hi</Line>
-        <p className="underline underline-offset-4 font-bold">I'm Osama,</p>
-        <p className="underline underline-offset-4 font-bold">
-          a front-end developer
+      <div className="font-bold space-y-2 [&_p]:text-base">
+        <Line className="text-4xl xl:text-7xl md:text-4xl">
+          Hi
+        </Line>
+        <p>I'm Osama Khaled,</p>
+        <p>
+          A{" "}
+          <span className="underline underline-offset-4 text-[#08cc7e]">
+            Front-End
+          </span>{" "}
+          Developer
         </p>
       </div>
     </Section>
@@ -33,7 +39,6 @@ export default function WhoAmI() {
 }
 
 const Section = tw(motion.div)`
-font-[system-ui]
 max-[350px]:text-base
 md:text-lg
 !text-sm

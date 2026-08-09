@@ -13,17 +13,20 @@ import Slider from "./Slider";
 
 export default function Modal(props) {
   const { onClose, isOpen } = props;
-  const { modal, sliderImages } = props.selectedProject;
+  const { modal,title } = props.selectedProject;
 
   return (
     <AlertDialog isCentered onClose={onClose} isOpen={isOpen}>
-      <AlertDialogOverlay bg="blackAlpha.800">
-        <AlertDialogContent maxW={"80%"} className="!bg-transparent">
+      <AlertDialogOverlay bg="blackAlpha.600" className="backdrop-blur-sm">
+        <AlertDialogContent
+          maxW={"80%"}
+          className="!bg-transparent max-sm:!h-[95vh] flex flex-col"
+        >
           {/* header */}
           <ModalHeader {...{ onClose, modal }}></ModalHeader>
           {/* body */}
-          <AlertDialogBody className="max-[640px]:w-[80%] relative max-[640px]:mx-auto !p-0">
-            <Slider sliderImages={sliderImages} />
+          <AlertDialogBody className="relative max-[640px]:mx-auto !p-0 flex-1 h-full">
+            <Slider selectedProject={title} />
           </AlertDialogBody>
           {/* footer */}
           <ModalFooter modal={modal}></ModalFooter>
@@ -35,7 +38,7 @@ export default function Modal(props) {
 // ---------------
 const ModalHeader = ({ onClose, modal }) => {
   return (
-    <AlertDialogHeader className="flex justify-between mb-2 max-sm:!p-2">
+    <AlertDialogHeader className="flex justify-between mb-2 max-sm:!p-2 flex-shrink-0">
       {/* project links */}
       <div className="flex flex-wrap items-end justify-center">
         <h1 className="text-lg sm:text-2xl">
@@ -69,9 +72,9 @@ const ModalHeader = ({ onClose, modal }) => {
 // ---------------
 const ModalFooter = ({ modal }) => {
   return (
-    <AlertDialogFooter className="!justify-start gap-y-2 flex-col max-sm:!p-4">
+    <AlertDialogFooter className="!justify-start gap-y-2 flex-col max-sm:!p-4 flex-shrink-0">
       <>
-        <ul className="list-disc mx-4 [&>li::marker]:text-[#0aff9d] max-sm:text-sm text-lg max-sm:hidden">
+        <ul className="list-disc -4 [&>li::marker]:text-[#0aff9d] max-sm:text-sm text-lg max-sm:hidden">
           {modal.description.map((point, i) => (
             <li className="text-gray-300 [text-wrap:pretty]" key={"point" + i}>
               {point}

@@ -16,7 +16,7 @@ const Project = (props) => {
 
   return (
     <>
-      {slide.map(({ completed, thumbnail, modal }, i) => (
+      {slide.map(({ completed, modal,title }, i) => (
         <GridCell
           initial="initial"
           whileHover="whileHover"
@@ -25,14 +25,14 @@ const Project = (props) => {
           style={{ gridArea: !SM ? SmDeviceProjects[i]:"" }}
           key={i}
         >
-          <Curtains></Curtains>
+          <Curtains/>
           {/* thumb nails */}
           <picture className="w-full">
-            <source media="(max-width:645px )" srcSet={thumbnail.mobile} />
+            <source media="(max-width:645px )" srcSet={`projects/mobile/thumbnail/${title}.webp`} />
             <img
               className="object-cover w-full"
-              alt={thumbnail.pc}
-              src={thumbnail.pc}
+              alt={title}
+              src={`projects/pc/thumbnail/${title}.webp`}
             />
           </picture>
           {/* eyes icons */}

@@ -36,14 +36,14 @@ const LeftSection = (props) => {
       initial="initial"
       whileInView="whileInView"
       viewport= {{ once: true }}
-      className="flex flex-col text-xs gap-y-3"
+      className="flex flex-col text-xs gap-y-1"
     >
       <motion.div
         variants={Logo_wrapper_variants}
         custom={i}
         className="flex flex-wrap w-full py-2 overflow-hidden tracking-widest"
       >
-        <p className="inline-block text-lg  max-[350px]:text-sm">
+        <p className="inline-block text-lg max-[356px]:text-sm">
           {p}
         </p>
       </motion.div>
@@ -67,10 +67,9 @@ const LeftSection = (props) => {
 
 const logoAnimation = {
   initial: { opacity: 0, x: "100%" },
-  whileInView: (j) => ({
+  whileInView: () => ({
     opacity: 1,
     x: 0,
-    // transition: { duration: 0.2, delay: 0.4 * j },
   }),
   viewport: { once: true },
 };
@@ -121,28 +120,3 @@ lg:gap-y-0
 gap-y-10 
 gap-x-2
 `;
-
-// const SkillsTitle = ({ line }) => {
-//   return line
-//     .replaceAll("-", `${"\u00A0"}`)
-//     .split(" ")
-//     .map((word, word_i) => (
-//       <p
-//         className="inline-block text-lg font-semibold max-[350px]:text-sm"
-//         key={word_i}
-//       >
-//         {word.split("").map((letter, letter_i) => (
-//           <TextAnimation
-//             Y={"6%"}
-//             opaSpeed={0.09}
-//             opaDelay={0.2}
-//             opaWaitTime={1.4}
-//             letter_i={letter_i}
-//             key={letter_i}
-//           >
-//             {letter}
-//           </TextAnimation>
-//         ))}
-//       </p>
-//     ));
-// };

@@ -4,9 +4,12 @@ import PageWrapper from "../../shared/PageWrapper";
 import SectionHeader from "../../shared/SectionHeader";
 import FormWrapper from "./sections/FormWrapper";
 import { IoMdMail } from "react-icons/io";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithubSquare,
+  FaWhatsappSquare,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
-import { AiOutlineDownload } from "react-icons/ai";
 
 export default function Contact() {
   return (
@@ -18,34 +21,20 @@ export default function Contact() {
         <FormWrapper></FormWrapper>
       </ContentWrapper>
       <Socials>
-        <a
-          href="https://www.linkedin.com/in/osama00"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-        <a href="https://github.com/OSAMA263" target="_blank" rel="noreferrer">
-          <FaGithub />
-        </a>
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=osamaelseify2@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <IoMdMail />
-        </a>
+        {socials.map(({ title, link, Icon }) => (
+          <a key={title} href={link} target="_blank" title={title} rel="noreferrer">
+            <Icon/>
+          </a>
+        ))}
       </Socials>
+
       <a
-        className="mt-6 h-fit"
-        href={"Osama_FrontEnd-Developer_CV.pdf"}
-        download="Osama_FrontEnd-Developer_CV.pdf"
+        className="mt-6 h-fit block"
+        href="https://drive.google.com/file/d/1Qvko4U-vruKwaNCBecWpFe97ye8iE6qZ/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >
-        <Button {...HeartBeat}>
-          Get Resume <AiOutlineDownload />
-        </Button>
+        <Button {...HeartBeat}>Resume</Button>
       </a>
     </PageWrapper>
   );
@@ -56,7 +45,7 @@ flex
 justify-center
 gap-4
 mt-4
-text-2xl
+text-3xl
 [&_svg]:text-[#3b3a3a]
 [&_svg:hover]:text-[#08cc7e]
 `;
@@ -76,17 +65,41 @@ const HeartBeat = {
 };
 
 const Button = tw(motion.button)`
-border-[2px]
-border-[#858994]
+border-[1px]
+border-[#08cc7e]
 hover:bg-[#0aff9d]
 hover:text-black
 hover:border-transparent
 flex
-sm:p-2
+px-7
+py-1
 sm:text-lg
-p-1
 rounded-md
 justify-center
 items-center 
 gap-x-1
+text-[#08cc7e]
 `;
+
+const socials = [
+  {
+    title: "whatsapp",
+    link: "https://wa.me/201121451306",
+    Icon: FaWhatsappSquare,
+  },
+  {
+    title: "mail",
+    link: "https://mail.google.com/mail/?view=cm&fs=1&to=osama.khaled0707@gmail.com",
+    Icon: IoMdMail,
+  },
+  {
+    title: "github",
+    link: "https://github.com/OSAMA263",
+    Icon: FaGithubSquare,
+  },
+  {
+    title: "linkedin",
+    link: "https://www.linkedin.com/in/osama00",
+    Icon: FaLinkedin,
+  },
+];

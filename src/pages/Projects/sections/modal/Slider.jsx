@@ -9,7 +9,7 @@ import {
   IoIosArrowDropleftCircle,
 } from "react-icons/io";
 
-export default function Slider({ sliderImages }) {
+export default function Slider({ selectedProject }) {
   const [activeInd, setActiveInd] = useState(0);
 
   const swiperProps = {
@@ -28,24 +28,24 @@ export default function Slider({ sliderImages }) {
 
   return (
     <>
-      <Swiper {...swiperProps} className="rounded-xl">
-        {sliderImages.pc.map((_, i) => (
+      <Swiper {...swiperProps} className="h-full w-full rounded-xl sm:h-[70vh]">
+        {Array.from({ length: 4 }).map((_, i) => (
           <SwiperSlide
             key={i}
-            className="rounded-xl flex items-center justify-center "
+            className="!h-full !w-full flex items-center justify-center overflow-hidden rounded-xl"
           >
-            <Pictures {...{ sliderImages, i }} />
+            <Pictures {...{ selectedProject, i }} />
           </SwiperSlide>
         ))}
       </Swiper>
-      <NavigationButtons {...{ sliderImages, activeInd }} />
+      <NavigationButtons {...{ activeInd }} />
     </>
   );
 }
 
-const NavigationButtons = ({ sliderImages, activeInd }) => {
+const NavigationButtons = ({ activeInd }) => {
   return (
-    <NavigateWrapper $sliderImages={sliderImages} $activeInd={activeInd}>
+    <NavigateWrapper $activeInd={activeInd}>
       <button aria-label="prev" id="prev">
         <IoIosArrowDropleftCircle />
       </button>
@@ -58,8 +58,7 @@ const NavigationButtons = ({ sliderImages, activeInd }) => {
 
 const NavigateWrapper = tw.div`
 ${({ $activeInd }) => $activeInd === 0 && "[&>#prev]:opacity-0"}
-${({ $activeInd, $sliderImages }) =>
-  $activeInd === $sliderImages.pc.length - 1 && "[&>#next]:opacity-0"}
+${({ $activeInd }) => $activeInd === 3 && "[&>#next]:opacity-0"}
   lg:flex
   hidden
 text-white

@@ -7,7 +7,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import { ProjectsInfo } from "./data";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
-import { useDisclosure, useMediaQuery,  } from "@chakra-ui/react";
+import { useDisclosure, useMediaQuery } from "@chakra-ui/react";
 import { motion, useSpring, useTransform } from "framer-motion";
 
 export default function ProjectsContainer({ scrollProg }) {
@@ -21,30 +21,28 @@ export default function ProjectsContainer({ scrollProg }) {
   };
 
   // slideX ther projects onscroll
-  const springConfig = { stiffness: 50, damping: 30 };
-  const x = useTransform(scrollProg, [0, 1], ["0%", "-75%"]);
+  const springConfig = { stiffness: 40, damping: 20, mass: 0.2 };
+  const x = useTransform(scrollProg, [0, 1], ["0%", "-82%"]);
   const scaleX = useTransform(scrollProg, [0, 1], [0, 1]);
   const scaleBar = useSpring(scaleX, springConfig);
   return (
     <>
       <motion.div className="flex relative" {...fadeInAnimation}>
-        <Container
-          // className={
-          //   activeInd === ProjectsInfo.length - 1
-          //     ? "[&.sides-shadow::after]:!opacity-0"
-          //     : "sides-shadow"
-          // }
-          style={{ x: sm_screen ? 0 : x }}
-        >
+        <Container style={{ x: sm_screen ? 0 : x }}>
           {!sm_screen ? (
             /* projects on lg screens */
             <div className="flex gap-x-6 w-full max-sm:hidden h-full">
               {ProjectsInfo.map((slide, i) => (
-                <Project key={i} {...{ slide, handleProjectClick }}></Project>
+                <Project
+                  key={i}
+                  {...{ slide, handleProjectClick }}
+                ></Project>
               ))}
             </div>
           ) : (
-            <SmScreensProjects handleProjectClick={handleProjectClick} />
+            <SmScreensProjects
+              handleProjectClick={handleProjectClick}
+            />
           )}
         </Container>
       </motion.div>
@@ -57,7 +55,7 @@ export default function ProjectsContainer({ scrollProg }) {
 // small devices projects swiper
 const SmScreensProjects = ({ handleProjectClick }) => {
   const [activeInd, setActiveInd] = useState(0);
-  
+
   const swiperProps = {
     spaceBetween: 10,
     grabCursor: false,
@@ -100,7 +98,7 @@ const SmScreensProjects = ({ handleProjectClick }) => {
           <BiLeftArrow />
         </button>
         <button
-          className="  [&>svg]:hover:scale-125 rounded-3xl"
+          className="[&>svg]:hover:scale-125 rounded-3xl"
           aria-label="next-btn"
           id="next-slide"
         >

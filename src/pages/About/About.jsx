@@ -45,8 +45,8 @@ const TextPoints = () => {
           key={line_i}
         >
           <TextAnimation
-            opaDelay={0.01}
-            opaSpeed={0.03}
+            opaDelay={0.007}
+            opaSpeed={0.09}
             letter_i={letter_i++}
             opaWaitTime={1}
           >
@@ -62,8 +62,8 @@ const TextPoints = () => {
                   {word.split("").map((letter, i) => (
                     // letter
                     <TextAnimation
-                      opaDelay={0.01}
-                      opaSpeed={0.03}
+                      opaDelay={0.007}
+                      opaSpeed={0.09}
                       opaWaitTime={1}
                       letter_i={letter_i++}
                       key={i}
@@ -109,19 +109,9 @@ max-h-fit
 max-[640px]:hidden
 `;
 
-// const text = [
-//   "Hi -I’m -Osama, -a -front–end -developer -with -a -passion -for -creating -clean, -responsive, -user–friendly -sites.",
-
-//   "I -also -did -a -6–month -internship -where -I -worked -with -a -team, -so -I'm -comfortable -in -both -solo -and -team -environments.",
-
-//   "I -work -best -on -solo -projects -because -I -can -stay -organized -and -know -where -everything -is. -There -are -no -conflicts -or -unexpected -changes, -and -I -understand -all -the -code. -This -helps -me -finish -faster -and -keep -everything -easy -to -manage.",
-
-//   "I'm -always -learning -and -improving -my -UI/UX -skills. -Whether -it's -a -personal -project -or -teamwork, -I -enjoy -turning -ideas -into -functional, -beautiful -websites.",
-// ];
-
 const text = [
-  " Hey, -i -enjoy -building -clean -responsive -with -good -aniamtions -websites, -dahsboards -with -online -updateable -data -useing -APIS.",
-  " I -completed -a -6- month -internship -where -I -collaborated -with -a -team -to -build -responsive, -modern -web -interfaces, -worked -closley -with -backend -developer -to -get -the -best -endpoints",
+  "Hey, -I -graduated -with -a -bachelor's -degree -in -MIS, -i -enjoy -building -clean -responsive -with -good -aniamtions -websites, -dahsboards -with -online -updateable -data -useing -APIS.",
+  "I -spent -the -past -2 -years -sharpening -my -skills -through -personal -projects, -and -gained -hands-on -experience -during -a -frontend -internship -at -Web -Masters",
   "I -focus -on -creating -smooth -user -experiences -using -React, -Tailwind, -framer Motion -and -modern -UI -libraries.",
   "I'm -constantly -learning -and -refining -my -skills -to -turn -ideas -into -functional -designs.",
 ];

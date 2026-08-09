@@ -1,12 +1,29 @@
 export const ProjectsInfo = [
   [
+    // don-molikai
+    {
+      title: "don-molikai",
+      completed: true,
+      modal: {
+        name: "Don-Molikai",
+        languages: [
+          "NextJS",
+          "TypeScript",
+          "Tailwind",
+          "Framer motion",
+        ],
+        description: [
+          "A restaurant showcase site designed to highlight brand identity through cinematic scroll animations.",
+          "Built with a strong focus on seamless transitions, interactive UI elements, performance, and responsiveness.",
+        ],
+        live: "https://don-molikai.vercel.app/",
+        github: "https://github.com/OSAMA263/don-molikai",
+      },
+    },
     // education
     {
+      title: "edu",
       completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/edu.webp",
-        mobile: "projects/mobile/thumbnail/edu.webp",
-      },
       modal: {
         name: "Education",
         languages: [
@@ -24,28 +41,11 @@ export const ProjectsInfo = [
         live: "https://osama263.github.io/education/",
         github: "https://github.com/OSAMA263/education",
       },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/edu/pic0.webp",
-          "projects/pc/slider/edu/pic1.webp",
-          "projects/pc/slider/edu/pic2.webp",
-          "projects/pc/slider/edu/pic3.webp",
-        ],
-        mobile: [
-          "projects/mobile/slider/edu/pic0.webp",
-          "projects/mobile/slider/edu/pic1.webp",
-          "projects/mobile/slider/edu/pic2.webp",
-          "projects/mobile/slider/edu/pic3.webp",
-        ],
-      },
     },
     // luna
     {
+      title: "luna",
       completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/luna.webp",
-        mobile: "projects/mobile/thumbnail/luna.webp",
-      },
       modal: {
         name: "Luna",
         languages: [
@@ -61,179 +61,37 @@ export const ProjectsInfo = [
         live: "https://osama263.github.io/luna/",
         github: "https://github.com/OSAMA263/luna",
       },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/luna/pic0.webp",
-          "projects/pc/slider/luna/pic1.webp",
-          "projects/pc/slider/luna/pic2.webp",
-          "projects/pc/slider/luna/pic3.webp",
-        ],
-        mobile: [
-          "projects/mobile/slider/luna/pic0.webp",
-          "projects/mobile/slider/luna/pic1.webp",
-          "projects/mobile/slider/luna/pic2.webp",
-          "projects/mobile/slider/luna/pic3.webp",
-        ],
-      },
-    },
-    // meditate
-    {
-      completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/maybe.webp",
-        mobile: "projects/mobile/thumbnail/maybe.webp",
-      },
-      modal: {
-        name: "Meditate",
-        languages: [
-          "ReactJS",
-          "Chakra-UI",
-          "Scss",
-          "Tailwind",
-          "Framer-Motion",
-          "Swiper",
-        ],
-        description: [
-          "dynamic web application facilitating decision-making by calculating optimal choices from user-inputted options and weights.",
-          "Developed with modern web technologies like SCSS, Tailwind, JavaScript and Framer motion, showcasing proficiency in front-end development and problem-solving skills.",
-        ],
-        live: "https://osama263.github.io/maybe/",
-        github: "https://github.com/OSAMA263/maybe",
-      },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/maybe/pic0.webp",
-          "projects/pc/slider/maybe/pic1.webp",
-          "projects/pc/slider/maybe/pic2.webp",
-          "projects/pc/slider/maybe/pic3.webp",
-        ],
-        mobile: [
-          "projects/mobile/slider/maybe/pic0.webp",
-          "projects/mobile/slider/maybe/pic1.webp",
-          "projects/mobile/slider/maybe/pic2.webp",
-          "projects/mobile/slider/maybe/pic3.webp",
-        ],
-      },
     },
   ],
+
   // slides2
   [
-    // journey
+    // portfolio2
     {
+      title: "portfolio2",
       completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/journey.webp",
-        mobile: "projects/mobile/thumbnail/journey.webp",
-      },
       modal: {
-        name: "Journey",
+        name: "Portfolio",
         languages: [
-          "ReactJS",
-          "Chakra UI",
-          "Tailwind Css",
-          "Framer-Motion",
-          "Swiper",
-        ],
-        description: [
-          "Developed a website for an apartment rental service.",
-          "Features a carousel image slider for visually engaging presentation.",
-          "Presents comprehensive information on rental properties and services.",
-        ],
-        live: "https://osama263.github.io/journey/",
-        github: "https://github.com/OSAMA263/journey",
-      },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/journey/pic0.webp",
-          "projects/pc/slider/journey/pic1.webp",
-          "projects/pc/slider/journey/pic2.webp",
-          "projects/pc/slider/journey/pic3.webp",
-        ],
-        mobile: [
-          "projects/mobile/slider/journey/pic0.webp",
-          "projects/mobile/slider/journey/pic1.webp",
-          "projects/mobile/slider/journey/pic2.webp",
-          "projects/mobile/slider/journey/pic3.webp",
-        ],
-      },
-    },
-    // wotah
-    {
-      completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/water.webp",
-        mobile: "projects/mobile/thumbnail/water.webp",
-      },
-      modal: {
-        name: "water",
-        languages: ["ReactJS", "Framer-Motion", "Tailwind", "Sass"],
-        description: ["A small portfolio for a company."],
-        live: "https://osama263.github.io/water/",
-        github: "https://github.com/OSAMA263/water",
-      },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/water/pic0.webp",
-          "projects/pc/slider/water/pic1.webp",
-          "projects/pc/slider/water/pic2.webp",
-          "projects/pc/slider/water/pic3.webp",
-        ],
-        mobile: [
-          "projects/mobile/slider/water/pic0.webp",
-          "projects/mobile/slider/water/pic1.webp",
-          "projects/mobile/slider/water/pic2.webp",
-          "projects/mobile/slider/water/pic3.webp",
-        ],
-      },
-    },
-
-    // constructs
-    {
-      completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/constructs.webp",
-        mobile: "projects/mobile/thumbnail/constructs.webp",
-      },
-      modal: {
-        name: "constructs",
-        languages: [
-          "ReactJS",
-          "Chakra-UI",
-          "Framer-Motion",
+          "NextJS",
+          "TypeScript",
           "Tailwind",
-          "Sass",
+          "Framer motion",
+          "React-Scroll",
         ],
         description: [
-          "Developed a simple website featuring smooth animations during page navigation and responsiveness for optimal viewing across devices.",
+          "A personal portfolio site with sections for about, experience, projects, and contact.",
+          "Features smooth scroll-based navigation and animated transitions between sections.",
+          "Showcases featured and additional projects with tech stack tags and direct links to live demos and repos.",
         ],
-        live: "https://osama263.github.io/constructs/",
-        github: "https://github.com/OSAMA263/constructs",
-      },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/constructs/pic0.webp",
-          "projects/pc/slider/constructs/pic1.webp",
-          "projects/pc/slider/constructs/pic2.webp",
-          "projects/pc/slider/constructs/pic3.webp",
-        ],
-        mobile: [
-          "projects/mobile/slider/constructs/pic0.webp",
-          "projects/mobile/slider/constructs/pic1.webp",
-          "projects/mobile/slider/constructs/pic2.webp",
-          "projects/mobile/slider/constructs/pic3.webp",
-        ],
+        live: "https://alright-ten.vercel.app/",
+        github: "https://github.com/OSAMA263/alright",
       },
     },
-  ],
-  // slides 3
-  [
     // e-store
     {
+      title: "E-store",
       completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/E-store.webp",
-        mobile: "projects/mobile/thumbnail/E-store.webp",
-      },
       modal: {
         name: "E-store",
         languages: [
@@ -253,31 +111,104 @@ export const ProjectsInfo = [
         live: "https://osama263.github.io/store/",
         github: "https://github.com/OSAMA263/store",
       },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/E-store/pic0.webp",
-          "projects/pc/slider/E-store/pic1.webp",
-          "projects/pc/slider/E-store/pic2.webp",
-          "projects/pc/slider/E-store/pic3.webp",
+    },
+    // miracle
+    {
+      title: "miracle",
+      completed: true,
+      modal: {
+        name: "Miracle",
+        languages: [
+          "NextJS",
+          "TypeScript",
+          "Tailwind",
+          "Framer motion",
+          "Slick-carousel",
         ],
-        mobile: [
-          "projects/mobile/slider/E-store/pic0.webp",
-          "projects/mobile/slider/E-store/pic1.webp",
-          "projects/mobile/slider/E-store/pic2.webp",
-          "projects/mobile/slider/E-store/pic3.webp",
+        description: [
+          "A cloud consulting company website with pages for services, careers, about, and contact.",
+          "Includes an FAQ section and a global presence display showcasing operations across multiple countries.",
         ],
+        live: "https://miracle-rose.vercel.app/",
+        github: "https://github.com/OSAMA263/miracle",
       },
     },
+  ],
+
+  // slides 3
+  [
+    // journey
+    {
+      title: "journey",
+      completed: true,
+      modal: {
+        name: "Journey",
+        languages: [
+          "ReactJS",
+          "Chakra UI",
+          "Tailwind Css",
+          "Framer-Motion",
+          "Swiper",
+        ],
+        description: [
+          "Developed a website for an apartment rental service.",
+          "Features a carousel image slider for visually engaging presentation.",
+          "Presents comprehensive information on rental properties and services.",
+        ],
+        live: "https://osama263.github.io/journey/",
+        github: "https://github.com/OSAMA263/journey",
+      },
+    },
+    // wotah
+    {
+      title: "water",
+      completed: true,
+      modal: {
+        name: "water",
+        languages: ["ReactJS", "Framer-Motion", "Tailwind", "Sass"],
+        description: ["A small portfolio for a company."],
+        live: "https://osama263.github.io/water/",
+        github: "https://github.com/OSAMA263/water",
+      },
+    },
+    // meditate
+    {
+      title: "maybe",
+      completed: true,
+      modal: {
+        name: "Meditate",
+        languages: [
+          "ReactJS",
+          "Chakra-UI",
+          "Scss",
+          "Tailwind",
+          "Framer-Motion",
+          "Swiper",
+        ],
+        description: [
+          "dynamic web application facilitating decision-making by calculating optimal choices from user-inputted options and weights.",
+          "Developed with modern web technologies like SCSS, Tailwind, JavaScript and Framer motion, showcasing proficiency in front-end development and problem-solving skills.",
+        ],
+        live: "https://osama263.github.io/maybe/",
+        github: "https://github.com/OSAMA263/maybe",
+      },
+    },
+  ],
+
+  // slide 4
+  [
     // cafe
     {
+      title: "cafe",
       completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/cafe.webp",
-        mobile: "projects/mobile/thumbnail/cafe.webp",
-      },
       modal: {
         name: "cafe",
-        languages: ["ReactJS", "Tailwind Css", "Framer-Motion", "APi"],
+        languages: [
+          "ReactJS",
+          "Tailwind Css",
+          "Framer-Motion",
+          "APi",
+        ],
         description: [
           "Displays lunch, dinner, and tea menus fetched live from a JSON server API.",
           "Allows you to add, edit and delete menu items from the front end.",
@@ -287,63 +218,54 @@ export const ProjectsInfo = [
         live: "https://osama263.github.io/cafe/",
         github: "https://github.com/OSAMA263/cafe",
       },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/cafe/pic0.webp",
-          "projects/pc/slider/cafe/pic1.webp",
-          "projects/pc/slider/cafe/pic2.webp",
-          "projects/pc/slider/cafe/pic3.webp",
-        ],
-        mobile: [
-          "projects/mobile/slider/cafe/pic0.webp",
-          "projects/mobile/slider/cafe/pic1.webp",
-          "projects/mobile/slider/cafe/pic2.webp",
-          "projects/mobile/slider/cafe/pic3.webp",
-        ],
-      },
     },
-
     // sushi
     {
+      title: "sushi",
       completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/suhi.webp",
-        mobile: "projects/mobile/thumbnail/suhi.webp",
-      },
       modal: {
         name: "Sushi",
-        languages: ["Nextjs", "Tailwind Css", "Scss", "Framer-Motion"],
+        languages: [
+          "Nextjs",
+          "Tailwind Css",
+          "Scss",
+          "Framer-Motion",
+        ],
         description: [
           "A vibrant sushi restaurant offering fresh rolls, sashimi, and a cozy, authentic dining experience.",
         ],
         live: "https://osama263.github.io/sushi/",
         github: "https://github.com/OSAMA263/sushi",
       },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/sushi/pic0.webp",
-          "projects/pc/slider/sushi/pic1.webp",
-          "projects/pc/slider/sushi/pic2.webp",
-          "projects/pc/slider/sushi/pic3.webp",
+    },
+    // constructs
+    {
+      title: "constructs",
+      completed: true,
+      modal: {
+        name: "constructs",
+        languages: [
+          "ReactJS",
+          "Chakra-UI",
+          "Framer-Motion",
+          "Tailwind",
+          "Sass",
         ],
-        mobile: [
-          "projects/mobile/slider/sushi/pic0.webp",
-          "projects/mobile/slider/sushi/pic1.webp",
-          "projects/mobile/slider/sushi/pic2.webp",
-          "projects/mobile/slider/sushi/pic3.webp",
+        description: [
+          "Developed a simple website featuring smooth animations during page navigation and responsiveness for optimal viewing across devices.",
         ],
+        live: "https://osama263.github.io/constructs/",
+        github: "https://github.com/OSAMA263/constructs",
       },
     },
   ],
-  // slide 4
+
+  // slide 5
   [
     // spiritfarer
     {
+      title: "spiritfarer",
       completed: true,
-      thumbnail: {
-        pc: "projects/pc/thumbnail/spiritfarer.webp",
-        mobile: "projects/mobile/thumbnail/spiritfarer.webp",
-      },
       modal: {
         name: "Spiritfarer",
         languages: [
@@ -360,22 +282,9 @@ export const ProjectsInfo = [
         live: "https://osama263.github.io/spiritfarer/",
         github: "https://github.com/OSAMA263/spiritfarer",
       },
-      sliderImages: {
-        pc: [
-          "projects/pc/slider/spiritfarer/pic0.webp",
-          "projects/pc/slider/spiritfarer/pic1.webp",
-          "projects/pc/slider/spiritfarer/pic2.webp",
-          "projects/pc/slider/spiritfarer/pic3.webp",
-        ],
-        mobile: [
-          "projects/mobile/slider/spiritfarer/pic0.webp",
-          "projects/mobile/slider/spiritfarer/pic1.webp",
-          "projects/mobile/slider/spiritfarer/pic2.webp",
-          "projects/mobile/slider/spiritfarer/pic3.webp",
-        ],
-      },
     },
     {
+      title: "in-progress",
       completed: false,
       thumbnail: {
         pc: "projects/pc/thumbnail/in-progress.webp",
@@ -391,67 +300,3 @@ export const ProjectsInfo = [
     },
   ],
 ];
-// hell nah
-/*const cute = [
-  {
-    completed: true,
-    thumbnail: {
-      pc: "projects/pc/thumbnail/Designo.webp",
-      mobile: "projects/mobile/thumbnail/Designo.webp",
-    },
-    modal: {
-      name: "Design",
-      languages: ["ReactJS", "Tailwind Css", "Framer-Motion"],
-      description: [
-        "Implemented a sample website challenge (Frontend Mentor) using Rotion, Tailwind CSS, and additional CSS styling",
-      ],
-      live: "https://osama263.github.io/Design/",
-      github: "https://github.com/OSAMA263/Design",
-    },
-    sliderImages: {
-      pc: [
-        "projects/pc/slider/design/pic0.webp",
-        "projects/pc/slider/design/pic1.webp",
-        "projects/pc/slider/design/pic2.webp",
-        "projects/pc/slider/design/pic3.webp",
-      ],
-      mobile: [
-        "projects/mobile/slider/design/pic0.webp",
-        "projects/mobile/slider/design/pic1.webp",
-        "projects/mobile/slider/design/pic2.webp",
-        "projects/mobile/slider/design/pic3.webp",
-      ],
-    },
-  },
-  {
-    completed: true,
-    thumbnail: {
-      pc: "projects/pc/thumbnail/arch-studio.webp",
-      mobile: "projects/mobile/thumbnail/arch-studio.webp",
-    },
-    modal: {
-      name: "Arch",
-      languages: ["ReactJS", "Tailwind Css", "Framer-Motion"],
-      description: [
-        "Created a sample website showcasing a multi-page design with responsive layout.",
-      ],
-      live: "https://osama263.github.io/Arch-/",
-      github: "https://github.com/OSAMA263/Arch-",
-    },
-    sliderImages: {
-      pc: [
-        "projects/pc/slider/arch/pic0.webp",
-        "projects/pc/slider/arch/pic1.webp",
-        "projects/pc/slider/arch/pic2.webp",
-        "projects/pc/slider/arch/pic3.webp",
-      ],
-      mobile: [
-        "projects/mobile/slider/arch/pic0.webp",
-        "projects/mobile/slider/arch/pic1.webp",
-        "projects/mobile/slider/arch/pic2.webp",
-        "projects/mobile/slider/arch/pic3.webp",
-      ],
-    },
-  },
-];
-*/

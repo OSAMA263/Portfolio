@@ -19,6 +19,4 @@ const H1 = tw(motion.h1)`
 text-3xl
 max-[480px]:text-lg
 mb-5
-font-[monospace]
-font-semibold
 `;

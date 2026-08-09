@@ -15,10 +15,10 @@ export default function FormWrapper() {
     // Emailjs
     emailjs
       .sendForm(
-        "service_3af467h",
-        "template_zlyvtch",
+        "service_0sjirv8",
+        "template_np96x01",
         formRef.current,
-        "epptficAfazT6NUZN"
+        "echqY3Zuc5AizQWek"
       )
       .then(
         (result) => {

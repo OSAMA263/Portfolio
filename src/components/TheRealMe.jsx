@@ -188,14 +188,14 @@ const theStuff = [
     header:
       "dont you fucking judge me bitch, we all got a thing that we love but embarrassed to share it with others, its like your kink, which this is not it but u get what im saying.",
     list: [
+      "Paprika 2006",
       "The Garden of Words",
-      "Orb",
+      "Orb: On the Movements of the Earth",
       "Chainsaw Man",
       "Josee, the Tiger and the Fish",
       "Violet Evergarden",
       "Odd taxi",
       "Clannad: After Story",
-      "WataMote",
       "A Silent Voice",
       "Barakamon",
       "D-Frag",

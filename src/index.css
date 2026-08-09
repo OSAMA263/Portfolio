@@ -8,8 +8,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100dvw;
-  font-family: system-ui, sans-serif;
-  -webkit-font-smoothing: none;
+  font-family:monospace, sans-serif;
   background-color: #111111;
   user-select: none;
   color: white;

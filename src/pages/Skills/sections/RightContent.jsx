@@ -10,6 +10,10 @@ export default function RightContent({ selectedLang }) {
           key={selectedLang}
           {...Information_variants}
         >
+          <span className="capitalize mb-2 block text-[#08cc7e]">
+            {selectedLang}
+          </span>
+
           {info[selectedLang]}
         </Information>
       </AnimatePresence>
@@ -34,8 +38,6 @@ text-xl
 
 const Wrapper = tw.div`
 relative
-xl:w-[60%]
-max-lg:w-[85%] 
 lg:w-[99%]
 text-2xl 
 my-auto
@@ -49,8 +51,10 @@ const info = {
   github:
     "I am good at deploying projects on the platform and applying GitHub for smooth and secure projects.",
   git: "Command of Git for version control, allowing for effective collaboration and tracking code changes.",
-  reactjs:
+  "react.js":
     "I am well-versed in React, proficient in creating reusable components and managing application state using hooks and Redux.",
+  "next.js":
+    "I have good experience using Next.js to build fast and scalable React applications. I mainly use it for routing, server-side rendering, API integration, and creating optimized websites with better performance.",
   css3: "I'm skilled at using CSS to design web pages and create visually pleasing layouts that improve the user experience as a whole.",
   javascript:
     " have good experience employing JavaScript to introduce interactivity functionality into web pages, resulting in dynamic user interfaces and dealying with APIs.",
@@ -62,7 +66,8 @@ const info = {
   vite: "Working with Vite and utilizing its ability to create React websites and quickly deploy them on platforms, I have greatly improved my experience.",
   chakraUi:
     "I'm good at using Chakra UI, a component library for React, to create accessible and customizable user interfaces.",
-  redux: "I am good at using Redux and ReduxToolkit as a global data store.",
+  redux:
+    "I am good at using Redux and ReduxToolkit as a global data store.",
   framerMotion:
     "I'm quite skilled at using frame motion. I can create excellent page animation and styling. I usually use this library along with Tailwind.",
   styledComponents:
