@@ -192,5 +192,5 @@ const navLinks = [
   { link: "about", label: "About Me" },
   { link: "skills", label: "Skills" },
   { link: "projects", label: "Projects" },
-  { link: "contact", label: "Contact" },
+  // { link: "contact", label: "Contact" },
 ];

@@ -1,42 +1,65 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useMediaQuery } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import tw from "tailwind-styled-components";
+import { socials } from "../../Contact/Contact";
+import { GlassButton } from "../../Contact/sections/FormInputs";
 
 export default function WhoAmI() {
-  const [smScreen] = useMediaQuery("(max-width: 1024px)");
-
   return (
-    <Section>
-      {/* glow */}
-      {!smScreen && (
-        <>
-          <div className="absolute h-[40%] w-[40%] rounded-full bg-[radial-gradient(circle,#0aff9d_0%,#0aff9df5_20%,#0aff9d85_40%,#0aff9d45_60%,transparent_100%)] blur-[80px] -z-10 animate-[pulse_4s_ease-in-out_infinite]"></div>
-          {/* pulsing wrapping layer */}
-          <div className="absolute h-[150%] w-[150%] rounded-full bg-[radial-gradient(circle,#0aff9dcc_0%,#0aff9d99_20%,#0aff9d33_20%,transparent_15%)] blur-[60px] -z-10 glow-slow"></div>
-          {/* inner glow */}
-          <div className="absolute h-[40%] w-[40%] rounded-full bg-[radial-gradient(circle,#0aff9dff_0%,#0aff9dbb_30%,transparent_50%)] blur-[40px] -z-10"></div>
-          {/*  inner pulsing ..iguess */}
-          <div className="absolute h-[20%] w-[20%] rounded-full bg-[radial-gradient(circle,#ffffff_0%,#0aff9d99_0%,transparent_90%)] blur-[25px] -z-10 animate-[pulse_4s_ease-in-out_infinite]"></div>
-        </>
-      )}
+    <>
+      <Section>
+        <div className="font-bold [&_p]:text-base">
+          <Line className="text-4xl xl:text-7xl md:text-4xl">Hi</Line>
+          <p>I'm Osama Khaled,</p>
+          <p>
+            A{" "}
+            <span className="underline underline-offset-4 text-[#08cc7e]">
+              Front-End
+            </span>{" "}
+            Developer
+          </p>
 
-      <div className="font-bold space-y-2 [&_p]:text-base">
-        <Line className="text-4xl xl:text-7xl md:text-4xl">
-          Hi
-        </Line>
-        <p>I'm Osama Khaled,</p>
-        <p>
-          A{" "}
-          <span className="underline underline-offset-4 text-[#08cc7e]">
-            Front-End
-          </span>{" "}
-          Developer
-        </p>
-      </div>
-    </Section>
+          {/* cv button */}
+          <a
+            className="mt-6 h-fit block"
+            href="https://drive.google.com/file/d/1Qvko4U-vruKwaNCBecWpFe97ye8iE6qZ/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GlassButton id="glass-btn">Resume</GlassButton>
+          </a>
+        </div>
+      </Section>
+
+      {/* contact buttons */}
+      <Socials>
+        {socials.map(({ title, link, Icon }, i) => (
+          <motion.a
+            {...linksAnimation}
+            custom={i}
+            key={title}
+            href={link}
+            target="_blank"
+            title={title}
+            rel="noreferrer"
+          >
+            <Icon />
+          </motion.a>
+        ))}
+      </Socials>
+    </>
   );
 }
+const linksAnimation = {
+  initial: { x: "150%" },
+  animate: (i) => ({
+    x: "0%",
+    transition: {
+      delay: 0.2 * i + 0.9,
+      duration: 0.4,
+    },
+  }),
+};
 
 const Section = tw(motion.div)`
 max-[350px]:text-base
@@ -65,4 +88,20 @@ who-wrapper
 const Line = tw.h1`
 transition-all
 font-bold
+`;
+
+const Socials = tw.div`
+flex
+flex-col
+justify-center
+gap-4
+md:mr-4
+mr-2
+md:text-[32px]
+text-lg
+[&_svg]:text-[#b8b8b8]
+[&_svg:hover]:text-[#08cc7e]
+[&_svg:hover]:scale-110
+absolute 
+right-0
 `;

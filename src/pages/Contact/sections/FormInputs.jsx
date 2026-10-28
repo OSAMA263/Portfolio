@@ -1,16 +1,24 @@
-import { FormControl, FormHelperText, FormLabel } from "@chakra-ui/react";
+import {
+  FormControl,
+  FormHelperText,
+  FormLabel,
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import tw from "tailwind-styled-components";
 
 export default function FormInputs({ formik }) {
-  const { handleBlur, handleChange, values, touched, errors } = formik;
+  const { handleBlur, handleChange, values, touched, errors } =
+    formik;
 
   return (
     <>
-      <FormControl className="sides-shado" {...formAnimation} custom={0} as={motion.div}>
-        <FormLabel htmlFor="name">
-          Name
-        </FormLabel>
+      <FormControl
+        className="sides-shado"
+        {...formAnimation}
+        custom={0}
+        as={motion.div}
+      >
+        <FormLabel htmlFor="name">Name</FormLabel>
         <input
           className={`max-sm:p-2 ${
             errors.name && touched.name && "invalid-input"
@@ -29,10 +37,13 @@ export default function FormInputs({ formik }) {
         </FormHelperText>
       </FormControl>
 
-      <FormControl className="sides-shado" {...formAnimation} custom={1} as={motion.div}>
-        <FormLabel  htmlFor="email">
-          Email
-        </FormLabel>
+      <FormControl
+        className="sides-shado"
+        {...formAnimation}
+        custom={1}
+        as={motion.div}
+      >
+        <FormLabel htmlFor="email">Email</FormLabel>
         <input
           className={`max-sm:p-2 ${
             errors.email && touched.email && "invalid-input"
@@ -51,10 +62,13 @@ export default function FormInputs({ formik }) {
         </FormHelperText>
       </FormControl>
 
-      <FormControl className="sides-shado" {...formAnimation} custom={2} as={motion.div}>
-        <FormLabel  htmlFor="message">
-          Your message
-        </FormLabel>
+      <FormControl
+        className="sides-shado"
+        {...formAnimation}
+        custom={2}
+        as={motion.div}
+      >
+        <FormLabel htmlFor="message">Your message</FormLabel>
         <motion.textarea
           className={`max-sm:p-2 resize-none ${
             errors.message && touched.message && "invalid-input"
@@ -72,15 +86,15 @@ export default function FormInputs({ formik }) {
           </p>
         </FormHelperText>
       </FormControl>
-      <Submit
+      <GlassButton
         {...formAnimation}
         custom={3}
-        id="submit"
+        id="glass-btn"
         value="send"
         type="submit"
       >
         submit
-      </Submit>
+      </GlassButton>
     </>
   );
 }
@@ -91,23 +105,24 @@ const formAnimation = {
     opacity: 1,
     transition: {
       delay: 0.1 * i + 1,
-      duration: .8,
+      duration: 0.8,
       ease: "easeInOut",
     },
   }),
   viewport: { once: true },
 };
 
-const Submit = tw(motion.button)`
+export const GlassButton = tw(motion.button)`
 overflow-hidden
 relative
 bg-[#1f1f1f]
-py-3 
+py-2
 md:w-fit
 w-full
-px-10
-text-lg
+px-8
+sm:text-lg
 border-[1px]
+rounded-md
 border-transparent
 hover:border-[#0aff9dab]
 `;

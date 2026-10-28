@@ -201,7 +201,7 @@ input:focus {
   box-shadow: 0px 0px 9px 1px #09ff9d80;
   border: 1px solid #18865a;
 }
-#submit::after {
+#glass-btn::after {
   content: "";
   display: block;
   position: absolute;
@@ -220,7 +220,7 @@ input:focus {
   transform: translate(-100%, -50%) skew(-45deg);
   transition: all 0.8s ease-in-out;
 }
-#submit:hover::after {
+#glass-btn:hover::after {
   left: 100%;
   transform: translate(50%, 50%) skew(-45deg);
 }

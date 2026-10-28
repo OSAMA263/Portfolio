@@ -91,7 +91,7 @@ const Page = ({ easterEgg, setEasterEgg, audioRef }) => {
                 {list.map((item) => (
                   <li
                     className={
-                      item.length > 30 ? "font-bold underline" : "list-disc"
+                      item.length > 40 ? "font-bold underline" : "list-disc"
                     }
                     key={item}
                   >

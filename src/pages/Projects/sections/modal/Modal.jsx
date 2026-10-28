@@ -41,7 +41,7 @@ const ModalHeader = ({ onClose, modal }) => {
     <AlertDialogHeader className="flex justify-between mb-2 max-sm:!p-2 flex-shrink-0">
       {/* project links */}
       <div className="flex flex-wrap items-end justify-center">
-        <h1 className="text-lg sm:text-2xl">
+        <h1 className="text-lg text-gray-400 sm:text-2xl">
           {modal.name}
           {modal.name === "E-commerce" && (
             <span className="hidden text-sm sm:inline">(my first project)</span>

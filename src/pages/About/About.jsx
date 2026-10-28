@@ -111,7 +111,7 @@ max-[640px]:hidden
 
 const text = [
   "Hey, -I -graduated -with -a -bachelor's -degree -in -MIS, -i -enjoy -building -clean -responsive -with -good -aniamtions -websites, -dahsboards -with -online -updateable -data -useing -APIS.",
-  "I -spent -the -past -2 -years -sharpening -my -skills -through -personal -projects, -and -gained -hands-on -experience -during -a -frontend -internship -at -Web -Masters",
+  "I -spent -the -past -+2 -years -sharpening -my -skills -through -personal -projects, -and -gained -hands-on -experience -during -a -frontend -internship -at -Web -Masters",
   "I -focus -on -creating -smooth -user -experiences -using -React, -Tailwind, -framer Motion -and -modern -UI -libraries.",
-  "I'm -constantly -learning -and -refining -my -skills -to -turn -ideas -into -functional -designs.",
+  "I'm -constantly -learning -and -refining -my -skills -to -turn -ideas -into -functional -designs - and -started -learning -Node.js, -Express -and -MongoDb.",
 ];

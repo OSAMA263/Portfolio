@@ -55,7 +55,7 @@ const logoAnimation = {
   initial: {
     opacity: 0,
   },
-  animate: (i) => ({ opacity: 1, transition: { delay: 0.029 * i + .6 } }),
+  animate: (i) => ({ opacity: 1, transition: { delay: 0.042 * i + .6 } }),
 };
 
 const LogoWrapper = tw(motion.div)`
@@ -65,6 +65,6 @@ const LogoWrapper = tw(motion.div)`
 const Logo = tw(motion.div)`
 ${({ $i }) =>
   $i === 25 ? "[&>svg]:hover:text-[#0aff9d]" : "[&>svg]:hover:text-white"}
-  [&>svg]:text-gray-600
+  [&>svg]:text-[#2c2c2c]
   p-3
 `;

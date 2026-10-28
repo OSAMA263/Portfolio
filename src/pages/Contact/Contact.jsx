@@ -3,12 +3,8 @@ import ContentWrapper from "../../shared/ContentWrapper";
 import PageWrapper from "../../shared/PageWrapper";
 import SectionHeader from "../../shared/SectionHeader";
 import FormWrapper from "./sections/FormWrapper";
-import { IoMdMail } from "react-icons/io";
-import {
-  FaLinkedin,
-  FaGithubSquare,
-  FaWhatsappSquare,
-} from "react-icons/fa";
+import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Contact() {
@@ -22,8 +18,14 @@ export default function Contact() {
       </ContentWrapper>
       <Socials>
         {socials.map(({ title, link, Icon }) => (
-          <a key={title} href={link} target="_blank" title={title} rel="noreferrer">
-            <Icon/>
+          <a
+            key={title}
+            href={link}
+            target="_blank"
+            title={title}
+            rel="noreferrer"
+          >
+            <Icon />
           </a>
         ))}
       </Socials>
@@ -34,7 +36,9 @@ export default function Contact() {
         target="_blank"
         rel="noreferrer"
       >
-        <Button {...HeartBeat}>Resume</Button>
+        <HeartBeatAnimation {...HeartBeatAnimation}>
+          Resume
+        </HeartBeatAnimation>
       </a>
     </PageWrapper>
   );
@@ -50,7 +54,7 @@ text-3xl
 [&_svg:hover]:text-[#08cc7e]
 `;
 
-const HeartBeat = {
+export const HeartBeatAnimation = {
   initial: { scale: 1, boxShadow: "0px 0px 10px 0.1px transparent" },
   whileHover: {
     scale: [1, 1.8, 1.8, 1],
@@ -64,7 +68,7 @@ const HeartBeat = {
   transition: { duration: 0.2, repeat: Infinity, repeatDelay: 0.6 },
 };
 
-const Button = tw(motion.button)`
+export const ResumeButton = tw(motion.button)`
 border-[1px]
 border-[#08cc7e]
 hover:bg-[#0aff9d]
@@ -81,25 +85,25 @@ gap-x-1
 text-[#08cc7e]
 `;
 
-const socials = [
+export const socials = [
   {
-    title: "whatsapp",
-    link: "https://wa.me/201121451306",
-    Icon: FaWhatsappSquare,
-  },
-  {
-    title: "mail",
-    link: "https://mail.google.com/mail/?view=cm&fs=1&to=osama.khaled0707@gmail.com",
-    Icon: IoMdMail,
+    title: "linkedin",
+    link: "https://www.linkedin.com/in/osama00",
+    Icon: FiLinkedin,
   },
   {
     title: "github",
     link: "https://github.com/OSAMA263",
-    Icon: FaGithubSquare,
+    Icon: FiGithub,
   },
   {
-    title: "linkedin",
-    link: "https://www.linkedin.com/in/osama00",
-    Icon: FaLinkedin,
+    title: "mail",
+    link: "https://mail.google.com/mail/?view=cm&fs=1&to=osama.khaled0707@gmail.com",
+    Icon: FiMail,
+  },
+  {
+    title: "whatsapp",
+    link: "https://wa.me/201121451306",
+    Icon: FaWhatsapp,
   },
 ];
